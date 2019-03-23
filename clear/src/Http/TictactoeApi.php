@@ -9,7 +9,7 @@ use Game\Bot;
 use Game\Game;
 use Game\Human;
 
-class TictactoeApi implements MoveInterface
+class TictactoeApi
 {
     protected $game;
     protected $board;
@@ -43,6 +43,10 @@ class TictactoeApi implements MoveInterface
             default:
                 return false;
         }
+    }
+
+    public function test($msg) {
+        echo $msg;
     }
 
     /**
