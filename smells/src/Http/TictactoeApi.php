@@ -9,7 +9,9 @@ use Game\Bot;
 use Game\Game;
 use Game\Human;
 
-class TictactoeApi
+require_once __DIR__ . '/MoveInterface.php';
+
+class TictactoeApi implements MoveInterface
 {
     protected $game;
     protected $board;
